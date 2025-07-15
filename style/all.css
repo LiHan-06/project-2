@@ -97,6 +97,8 @@ body{
 
 img{
     vertical-align: middle; /* 清除圖片下方空白間隙 */
+    max-width: 100%;
+    height: auto;
 }
 
 a{
@@ -108,8 +110,106 @@ a{
 
 /* 通用樣式 */
 .container{
-    width: 856px;
+    width: 1296px;
     margin: 0 auto;
+}
+
+.col-1{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12); /* 佔據1個欄位的寬度 */
+}
+
+.col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 2); /* 佔據2個欄位的寬度 */
+}
+
+.col-3{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 3); /* 佔據3個欄位的寬度 */
+}
+
+.col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 4); /* 佔據4個欄位的寬度 */
+}
+
+.col-5{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 5); /* 佔據5個欄位的寬度 */
+}
+
+.col-6{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 6); /* 佔據6個欄位的寬度 */
+}
+
+.col-7{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 7); /* 佔據7個欄位的寬度 */
+}
+
+.col-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 8); /* 佔據8個欄位的寬度 */
+}
+
+.col-9{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 9); /* 佔據9個欄位的寬度 */
+}
+
+.col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 10); /* 佔據10個欄位的寬度 */
+}
+
+.col-11{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 11); /* 佔據11個欄位的寬度 */
+}
+.col-12{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;/* 元素自動換行 */
 }
 
 .h2{
@@ -155,11 +255,19 @@ h6{
 }
 
 .bg-neutral-100{
-    color: var(--neutral-100);
+    background-color: var(--neutral-100);
+}
+
+.bg-primary-200{
+    background-color: var(--primary-200);
 }
 
 .p-12{
     padding: 12px;
+}
+
+.p8-12{
+    padding: 8px 12px;
 }
 
 .py-8{
@@ -185,4 +293,107 @@ h6{
 .py-32{
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.py-64{
+    padding-top: 64px; 
+    padding-bottom: 64px;
+}
+
+.me-8{
+    margin-right: 8px;
+}
+
+.me-12{
+    margin-right: 12px;
+}
+
+.me-24{
+    margin-right: 24px;
+}
+
+.me-40{
+    margin-right: 40px;
+}
+
+.me-48{
+    margin-right: 48px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
+.bi{
+    vertical-align: bottom;
+}
+
+.prl-312{
+    padding-right: 312px;
+    padding-left: 312px;
+}
+
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before{
+    content:'/';
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+.breadcrumb-item{
+    display: flex;
+    font-weight: 500;
+}
+
+.breadcrumb-link{
+    color: var(--neutral-600);
+}
+
+.btn{
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer; /* 游標變成手指樣式 */
+    border: none;
+    background: transparent; /* 背景色變透明 */
+}
+
+.btn-dark{
+    background: var(--neutral-900);
+    color: var(--neutral-0);
 }
