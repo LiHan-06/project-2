@@ -51,7 +51,7 @@ table {
 	border-spacing: 0;
 }
 
-/*顏色*/
+/* 顏色 */
 :root{
   --primary-100:#F5FEE7;
   --primary-200:#e8fec5;
@@ -80,4 +80,109 @@ table {
   --Info-100:#EEF5FC;
   --Info-200:#97C3ED;
   --Info-300:#3087DB;
+}
+
+/* 標籤基本樣式 */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+img{
+    vertical-align: middle; /* 清除圖片下方空白間隙 */
+}
+
+a{
+    color: var(--neutral-900);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+/* 通用樣式 */
+.container{
+    width: 856px;
+    margin: 0 auto;
+}
+
+.h2{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h3{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;    
+}
+
+h6{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;    
+}
+
+.text-sm{
+    font-size: 14px;
+}
+
+.text-primary-400{
+    color: var(--primary-400);
+}
+
+.text-danger{
+    color: var(--Danger-300);
+}
+
+.bg-neutral-100{
+    color: var(--neutral-100);
+}
+
+.p-12{
+    padding: 12px;
+}
+
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
